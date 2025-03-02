@@ -1,0 +1,45 @@
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*margin-bottom: 10px;*/
+    background-color: #17598f;
+    color: white;
+    padding: 20px;
+}
+
+header p {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightgoldenrodyellow;
+}
+
+header nav {
+    vertical-align: center;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border: 1px lightgoldenrodyellow solid;
+    border-radius: 3px;
+    color: white;
+}
+
+header nav ul li:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav ul li a:hover {
+    color: inherit;
+}
+
+

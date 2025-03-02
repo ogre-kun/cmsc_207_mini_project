@@ -2,26 +2,56 @@
 <html lang="en">
     <head>
         <title>CMSC 207 Mini Project</title>
-        <link type="text/css" rel="stylesheet" href="css/my-stylesheet.css"/>
+        <link type="text/css" rel="stylesheet" href="css/base.css"/>
+        <link type="text/css" rel="stylesheet" href="css/header.css"/>
+        <link type="text/css" rel="stylesheet" href="css/article.css"/>
+        <link type="text/css" rel="stylesheet" href="css/footer.css"/>        
     </head>
     <body>
-        <h1>Header : Simple Navigation Menu</h1>
-        <h1>About Me</h1>
-        <p>Karol Wojtyla O. Macaraan</p>
-        <p>This is a paragraph about me</p>
-    
-        <h1>My Hobbies and Interests</h1>
-        <ul>
-            <li>Gaming.</li>            
-            <li>Swimming.</li>
-            <li>Learning the Japanese language.</li>            
-            <li>Computer programming.</li>
-        </ul>
+        <header>
+            <p>karol wojtyla macaraan</p>
+            <nav>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Hobbies</a></li>
+                    <li><a href="#">Contact Info</a></li>            
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h1>About Me</h1>
+            <section>
+                <img id="student" src="images/perrserker_portrait.jpg" alt="Student" width="315">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+            </section>
+        </article>
 
-        <h1>Contact Info</h1>    
-        <ul>
-            <li>Email: komacaraan@alum.up.edu.ph</li>
-            <li>Phone: 09770140291</li>
-        </ul>
+        <article>
+            <h1>My Hobbies and Interests</h1>
+            <section>
+                <img id="hobby" src="images/card_game_hobby.jpg" alt="card game" width="315">
+                <ul>
+                    <li>Gaming.</li>            
+                    <li>Swimming.</li>
+                    <li>Learning the Japanese language.</li>            
+                    <li>Computer programming.</li>
+                </ul>
+            </section>
+        </article>  
+            
+
+        <footer>
+            <h1>Contact Info</h1>    
+            <ul>
+                <li>Email: komacaraan@alum.up.edu.ph</li>
+                <li>Phone: 09770140291</li>
+            </ul>
+        </footer>
     </body>
 </html>

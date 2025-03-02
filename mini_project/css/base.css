@@ -1,0 +1,16 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    font-size: 14px;
+    background-color: whitesmoke;
+    max-width: 1024px;
+    min-width: 256px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
