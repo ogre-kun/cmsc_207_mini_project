@@ -1,11 +1,18 @@
 header { 
+    position: sticky;
+    top: 0;
+    display: block;
+    background-color: var(--banner-color);
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    z-index: 1000;
+}
+
+header .header-container-layer-one {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*margin-bottom: 10px;*/
-    background-color: #17598f;
-    color: white;
-    padding: 20px;
 }
 
 header p {
@@ -14,7 +21,22 @@ header p {
     color: lightgoldenrodyellow;
 }
 
+header .header-container-layer-theme {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+
+header .header-container-layer-theme p {
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightgoldenrodyellow;
+}
+
+
 header nav {
+    display: flex;
     vertical-align: center;
 }
 
@@ -33,6 +55,9 @@ header nav ul li:hover {
     color: darkblue;
 }
 
+
+
+
 header nav ul li a {
     text-decoration: none;
     color: inherit;
@@ -42,4 +67,8 @@ header nav ul li a:hover {
     color: inherit;
 }
 
+header nav ul .button-img {
+    width: auto;
+    height: 15px;
+}
 

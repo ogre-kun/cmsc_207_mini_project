@@ -1,3 +1,39 @@
+:root {
+    /* default theme */
+    --banner-color: #17598f;
+    --gradient-color-start: #fdfdfd;
+    --gradient-color-end: cadetblue;
+    --gradient-panels-start: whitesmoke;
+    --gradient-panels-end: white;
+    --piping-color: cornflowerblue;
+    
+    
+    --background-gradient: linear-gradient(to bottom left, var(--gradient-color-start), var(--gradient-color-end));
+    --background-gradient-hobby-panels:  linear-gradient(to right, var(--gradient-panels-start), var(--gradient-panels-end));
+    --shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    
+    /* all-blue theme*/
+    --federal-blue: #03045E;
+    --honolulu-blue: #0077B6;
+    --pacific-cyan: #00B4D8;
+    --non-photo-blue: #90E0EF;
+    --light-cyan: #CAF0F8;
+    
+    /* semi-colorful theme*/
+    --ut-orange: #FF8811;;
+    --jasmine: #F4D06F;
+    --floral-white: #fff8f0;
+    --tiffany-blue: #9DD9D2;
+    --space-cadet: #392F5A;
+    
+    /* colorful theme*/
+    --hunyadi-yellow: #EDAE49;
+    --amaranth: #D1495B;
+    --caribbean-current: #00798C;
+    --lapiz-lazuli: #30638E;
+    --indigo-dye: #003D5B;
+}
+
 * {
     margin:0;
     padding:0;
@@ -7,9 +43,9 @@
 body {
     font-family: system-ui, sans-serif;
     font-size: 14px;
-    background-color: whitesmoke;
+    background-color: lightgray;
     max-width: 1024px;
-    min-width: 256px;
+    min-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }

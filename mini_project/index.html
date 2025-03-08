@@ -5,53 +5,118 @@
         <link type="text/css" rel="stylesheet" href="css/base.css"/>
         <link type="text/css" rel="stylesheet" href="css/header.css"/>
         <link type="text/css" rel="stylesheet" href="css/article.css"/>
-        <link type="text/css" rel="stylesheet" href="css/footer.css"/>        
+        <link type="text/css" rel="stylesheet" href="css/footer.css"/> 
+        <script type="text/javascript" src="js/scripts.js"></script>
     </head>
     <body>
         <header>
-            <p>karol wojtyla macaraan</p>
-            <nav>
-                <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Hobbies</a></li>
-                    <li><a href="#">Contact Info</a></li>            
-                </ul>
-            </nav>
+            <div class="header-container-layer-one">
+                <p>karol wojtyla macaraan</p>
+                <nav>
+                    <ul>
+                        <li><a href="#about-me">About Me</a></li>
+                        <li><a href="#hobbies">Hobbies</a></li>
+                        <li><a href="#contact">Contact Info</a></li>
+                        <li onmouseover="on_hover_theme_button()"
+                            onmouseout="on_leave_theme_button()" 
+                            onclick="cycle_theme()"
+                            title="Cycle Theme">
+                            <img id="theme-button" 
+                                 class="button-img" 
+                                 src="images/theme-button-white.png" 
+                                 alt="theme-button-white" />
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-container-layer-theme">
+                <p>theme:&nbsp</p>
+                <p id="theme-name">default</p>
+               
+            </div>
         </header>
         <article>
-            <h1>About Me</h1>
-            <section>
-                <img id="student" src="images/perrserker_portrait.jpg" alt="Student" width="315">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
+            <section id="about-me">
+                <div class="about-me-container">
+                    <h1>About Me</h1>
+                    <div class="about-me-container-sub">
+                        <img id="student" src="images/perrserker_portrait.jpg" alt="Student"/>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                            id est laborum
+                        </p>
+                    </div>
+                 </div>
+                <div class="hobbies-piping"></div>                
             </section>
         </article>
 
         <article>
-            <h1>My Hobbies and Interests</h1>
-            <section>
-                <img id="hobby" src="images/card_game_hobby.jpg" alt="card game" width="315">
-                <ul>
-                    <li>Gaming.</li>            
-                    <li>Swimming.</li>
-                    <li>Learning the Japanese language.</li>            
-                    <li>Computer programming.</li>
-                </ul>
+            <section id="hobbies">
+                <div class="hobbies-container">
+                    <h1>My Hobbies and Interests</h1>
+                    <p>
+                        I enjoy reading, especially fiction, as it allows me to escape into different worlds without leaving my space. 
+                        Playing video games is another way I unwind, immersing myself in story-driven adventures or strategic challenges. 
+                        When I want something more passive, I watch Netflix, letting movies and series fill the quiet moments. 
+                    </p>
+                    <img src="images/hobbies.png" alt="Hobbies">
+                    <div class="hobbies-samples">
+                        <div class="hobbies-sample-panel">
+                            <img class="hobbies-panel-img" src="images/card-games.png" alt="Card Games">
+                            <h2>Video Games</h2>
+                            <p>
+                                I like playing video games.
+                                Specifically, card games.
+                            </p>
+                            <p class="read-more"><a href="#">Read More</a></p>
+                        </div>
+                        <div class="hobbies-sample-panel">
+                            <img class="hobbies-panel-img" src="images/fantasy-book.png" alt="Reading Fantasy Books">
+                            <h2>Fantasy Books</h2>
+                            <p>
+                                I like reading fantasy books.
+                                Right now, I'm reading the Stormlight Archive.
+                            </p>
+                            <p class="read-more"><a href="#">Read More</a></p>                            
+                        </div>
+                        <div class="hobbies-sample-panel">
+                            <img class="hobbies-panel-img" src="images/watch-movie.png" alt="Movies and TV Shows">
+                            <h2>Movies & TV Shows</h2>
+                            <p>
+                                I like watching movies and TV shows.
+                                Right now, I'm watching the TV show The White Lotus.
+                            </p>
+                            <p class="read-more"><a href="#">Read More</a></p>                            
+                        </div>
+                    </div>
+                    <div class="hobbies-piping"></div>                    
+                </div>
             </section>
         </article>  
             
 
-        <footer>
-            <h1>Contact Info</h1>    
-            <ul>
-                <li>Email: komacaraan@alum.up.edu.ph</li>
-                <li>Phone: 09770140291</li>
-            </ul>
+        <footer id="contact">
+            <div class="footer-container">
+                <h1>Contact Me</h1>
+                <div class="footer-social-icons">
+                    <a href="#"><img src="images/linkedn.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="images/github.png" alt="GitHub"></a>
+                    <a href="#"><img src="images/msteams.png" alt="MS Teams"></a>
+                    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/discord.png" alt="Discord"></a>                    
+                </div>
+                <div class="footer-text">
+                    <h3>komacaraan@alum.up.edu.ph</h3>
+                    <h3>mobile no. 09770140291</h3>                
+                </div>
+            </div>
         </footer>
     </body>
 </html>
