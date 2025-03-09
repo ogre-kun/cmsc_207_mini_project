@@ -17,8 +17,10 @@ header .header-container-layer-one {
 
 header p {
     font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: lightgoldenrodyellow;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-family: "Walter Turncoat", cursive;    
+    /*color: lightgoldenrodyellow;*/
+    color: var(--gradient-panels-start)
 }
 
 header .header-container-layer-theme {
