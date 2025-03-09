@@ -1,15 +1,16 @@
-
+/* Changes the theme button style on hover */
 function on_hover_theme_button() {
     let theme_button = document.getElementById("theme-button");
     theme_button.src = "images/theme-button-blue.png";
 }
 
+/* Reverts the theme button style when mouse leaves */
 function on_leave_theme_button() {
     let theme_button = document.getElementById("theme-button");
     theme_button.src = "images/theme-button-white.png";
 }
 
-
+/* Cycles through the available color themes */
 function cycle_theme() {
     let theme = localStorage.getItem("theme") || "default";
 
@@ -21,7 +22,6 @@ function cycle_theme() {
         document.documentElement.style.setProperty("--gradient-panels-end", 'whitesmoke');
         document.documentElement.style.setProperty("--piping-color", 'var(--honolulu-blue)');        
 
-        // Change set theme
         localStorage.setItem("theme", "all-blue");
     } else if (theme === "all-blue") {
         document.documentElement.style.setProperty("--banner-color", 'var(--space-cadet)');
@@ -53,5 +53,14 @@ function cycle_theme() {
     }
 
     document.getElementById('theme-name').textContent = localStorage.getItem("theme")   ;
-    
+}
+
+/* Shows the fun content */
+function fun_content_show() {
+    let fun_content = document.getElementById("fun-contents");
+    if (fun_content.style.display === "none") {
+        fun_content.style.display = 'block';
+    } else {
+        fun_content.style.display = 'none';
+    }
 }

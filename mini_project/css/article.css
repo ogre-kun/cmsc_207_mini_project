@@ -1,11 +1,11 @@
 article {
-    /*border: 1px solid black;*/
     margin-top: 0;
     margin-bottom: 20px;
 }
 
 article section {
-    /*display: flex;*/
+    background-image: var(--background-gradient);
+    margin-bottom: 20px;
 }
 
 article section img {
@@ -21,9 +21,20 @@ article section h1 {
     width: 100%;
     text-align: center;
     font-size: 25px;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
+article section .photo {
+    width: 25%;
+    height: auto;
+    border: 10px solid whitesmoke;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease-in-out;
+}
+
+article section .photo:hover {
+    transform: scale(1.05);
+}
 
 
 /*ABOUT ME*/
@@ -32,8 +43,6 @@ article section .about-me-container {
     display: block;
     justify-content: center;
     align-items: center;
-    background-image: var(--background-gradient);
-
 }
 
 article section .about-me-container .about-me-container-sub {
@@ -44,18 +53,9 @@ article section .about-me-container .about-me-container-sub {
     padding: 30px;
 }
 
-article section .about-me-container img {
-    width: 25%;
-    height: auto;
-    border: 10px solid whitesmoke; 
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease-in-out;
-}
-
-article section .about-me-container img:hover {
-    transform: scale(1.05);
-    /*transform: translateX(-5px) translateY(10px);*/
-    
+article section .about-me-container p {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 article section .hobbies-piping {
@@ -69,14 +69,12 @@ article section .hobbies-piping {
 article section .hobbies-container {
     width: 100%;
     height: 70%;
-    background-image: var(--background-gradient);
     justify-content: center;
     align-items: center;
 }
 
 
 article section .hobbies-container p {
-    font-size: 10px;
     margin-top: 3%;
     margin-left: 20%;
     margin-right: 20%;
@@ -100,15 +98,15 @@ article section .hobbies-samples {
 
 article section .hobbies-samples .hobbies-sample-panel {
     width: 30%;
-    /*border: 1px solid lightgray;*/
-    /*background: whitesmoke;*/
     background-image: var(--background-gradient-hobby-panels);
     display: block;
     text-align: center;
     margin-right: 20px;
     padding-top: 30px;
+    padding-bottom: 20px;
     box-shadow: var(--shadow);
     border-radius: 10px;
+    font-size: 11px;
 }
 
 article section .hobbies-samples .hobbies-sample-panel:last-child {
@@ -124,16 +122,115 @@ article section .hobbies-samples .hobbies-sample-panel img:hover {
     transform: scale(1.3) rotate(10deg);
 }
 
-
 article section .hobbies-samples .hobbies-sample-panel h2 {
     margin-top: 20px;
 }
 
 article section .hobbies-samples .hobbies-sample-panel p {
-    text-align: center;
+    text-align: left;
 }
 
 article section .hobbies-samples .hobbies-sample-panel .read-more  {
+    padding-top: 10px;
+}
+
+
+/* FUN */
+article .fun  {
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+article .fun .fun-group   {
+    padding-bottom: 20px;    
+}
+
+article .fun button {
+    width: 10%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: var(--gradient-panels-start);
+    border: 1px solid var(--banner-color);
+    border-radius: 3px;
+    margin-top:20px;
+}
+
+article .fun button:hover {
+    background: var(--gradient-panels-end);
+    cursor: pointer;
+}
+
+article .fun-group .fun-contents {
+    display: none;
+    margin-left: 60px;
+}
+
+article .fun-group .fun-image-group {
+    display: flex;
+    align-items: flex-start;
     
 }
 
+article .fun-group .fun-image-group ul {
+    text-align: left;
+    margin: 60px;
+}
+
+article .fun-group .fun-image-group ul li {
+    margin-bottom: 10px;
+}
+
+/* MEDIA QUERIES OVERRIDE */
+@media screen and (max-width: 600px) {
+    /* Make display block when screen width is 600px or less */
+    article section .about-me-container .about-me-container-sub {
+        display: block;
+        width: 95%;
+        text-align: center;
+        padding: 30px;
+    }
+
+    article section .hobbies-samples {
+        display: block;
+        text-align: center;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    article section .hobbies-samples .hobbies-sample-panel {
+        width: 100%;
+        background-image: var(--background-gradient-hobby-panels);
+        display: block;
+        text-align: center;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        box-shadow: var(--shadow);
+        border-radius: 10px;
+    }
+
+    article section .hobbies-samples .hobbies-sample-panel img {
+        width: 20%;
+    }
+
+    article .fun-group .fun-image-group {
+        display: block;
+        text-align: center;
+    }
+
+    article .fun-group img {
+        margin-top: 20px;
+    }
+
+    article .fun-group button {
+        width: 20%;
+    }
+
+    article .fun-group .fun-contents {
+        margin-left: 0;
+    }
+    
+}

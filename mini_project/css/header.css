@@ -48,15 +48,13 @@ header nav ul li {
     border: 1px lightgoldenrodyellow solid;
     border-radius: 3px;
     color: white;
+    cursor: pointer;
 }
 
 header nav ul li:hover {
     background-color: white;
     color: darkblue;
 }
-
-
-
 
 header nav ul li a {
     text-decoration: none;
@@ -70,5 +68,20 @@ header nav ul li a:hover {
 header nav ul .button-img {
     width: auto;
     height: 15px;
+}
+
+/* MEDIA QUERIES OVERRIDE */
+@media screen and (max-width: 600px) {
+    header .header-container-layer-one {
+        display: block;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    header .header-container-layer-theme {
+        justify-content: flex-start;
+    }
 }
 

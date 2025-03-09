@@ -34,10 +34,19 @@ footer .footer-container .footer-social-icons img:hover {
     transform: rotate(25deg);
 }
 
-
 footer .footer-container .footer-text {
     color: white;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: normal;
 }
 
+/* MEDIA QUERIES OVERRIDE */
+@media screen and (max-width: 600px) {
+    footer .footer-container .footer-social-icons {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    footer .footer-container .footer-social-icons img:last-of-type {
+        margin-right: 0;
+    }
+}

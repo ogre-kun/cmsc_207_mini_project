@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>CMSC 207 Mini Project</title>
+        <title>CMSC 207 Student Profile</title>
         <link type="text/css" rel="stylesheet" href="css/base.css"/>
         <link type="text/css" rel="stylesheet" href="css/header.css"/>
         <link type="text/css" rel="stylesheet" href="css/article.css"/>
         <link type="text/css" rel="stylesheet" href="css/footer.css"/> 
         <script type="text/javascript" src="js/scripts.js"></script>
-    </head>
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cinzel:wght@400..900&family=Gloria+Hallelujah&family=Indie+Flower&family=Walter+Turncoat&display=swap" rel="stylesheet">
+
+  </head>
     <body>
         <header>
+<!-- HEADER SECTION -->
             <div class="header-container-layer-one">
-                <p>karol wojtyla macaraan</p>
+                <p>@karol wojtyla macaraan</p>
                 <nav>
                     <ul>
                         <li><a href="#about-me">About Me</a></li>
                         <li><a href="#hobbies">Hobbies</a></li>
+                        <li><a href="#fun">Fun</a></li>                        
                         <li><a href="#contact">Contact Info</a></li>
                         <li onmouseover="on_hover_theme_button()"
                             onmouseout="on_leave_theme_button()" 
@@ -36,20 +44,23 @@
             </div>
         </header>
         <article>
+<!-- ABOUT ME SECTION -->
             <section id="about-me">
                 <div class="about-me-container">
                     <h1>About Me</h1>
                     <div class="about-me-container-sub">
-                        <img id="student" src="images/perrserker_portrait.jpg" alt="Student"/>
+                        <img class="photo" id="student" src="images/student-photo.png" alt="Student"/>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                            id est laborum
+                            My name is Karol, and I currently work as an assistant to the quality manager in a manufacturing plant.
+                            <br><br>
+                            I am a licensed Chemical Engineer and Chemical Technician, 
+                            having earned my Bachelor's degree in Chemical Engineering from UP Diliman.
+                            <br><br>
+                            I am pursuing this Diploma Course in Computer Science at UPOU to build a strong foundation 
+                            in computer science and artificial intelligence as these are rapidly evolving and impactful fields.
+                            <br><br>
+                            In the future, I plan to further my knowledge by pursuing a Master's degree 
+                            in either Computer Science or Data Science when the opportunity arises.
                         </p>
                     </div>
                  </div>
@@ -58,13 +69,14 @@
         </article>
 
         <article>
+<!-- HOBBIES SECTION -->
             <section id="hobbies">
                 <div class="hobbies-container">
                     <h1>My Hobbies and Interests</h1>
                     <p>
-                        I enjoy reading, especially fiction, as it allows me to escape into different worlds without leaving my space. 
-                        Playing video games is another way I unwind, immersing myself in story-driven adventures or strategic challenges. 
-                        When I want something more passive, I watch Netflix, letting movies and series fill the quiet moments. 
+                        My hobbies include reading, especially fantasy and science fiction. 
+                        I enjoy playing video games on my PC or Nintendo Switch. During my downtime, I like watching movies and TV series. 
+                        I also dabble in learning the Japanese language.
                     </p>
                     <img src="images/hobbies.png" alt="Hobbies">
                     <div class="hobbies-samples">
@@ -72,36 +84,67 @@
                             <img class="hobbies-panel-img" src="images/card-games.png" alt="Card Games">
                             <h2>Video Games</h2>
                             <p>
-                                I like playing video games.
-                                Specifically, card games.
+                                I'm a gamer and have been since I was young.
+                                I love strategy games and have a strong inclination toward card games 
+                                like <strong><i>Balatro</i></strong>, <strong><i>Magic: The Gathering</i></strong>, and <strong><i>Pokemon TCG</i></strong>. 
+                                I also enjoy relaxing simulation games like <strong><i>Stardew Valley</i></strong>. 
+                                One day, I hope to create my own game.
                             </p>
-                            <p class="read-more"><a href="#">Read More</a></p>
                         </div>
                         <div class="hobbies-sample-panel">
                             <img class="hobbies-panel-img" src="images/fantasy-book.png" alt="Reading Fantasy Books">
-                            <h2>Fantasy Books</h2>
+                            <h2>Reading</h2>
                             <p>
-                                I like reading fantasy books.
-                                Right now, I'm reading the Stormlight Archive.
+                                I enjoy reading fantasy and science fiction books.
+                                Some of my favorites include <strong><i>Project Hail Mary</i></strong>, <strong><i>The Stormlight Archive</i></strong> series by Brandon Sanderson,
+                                <strong><i>The Wheel of Time</i></strong> by Robert Jordan, and <strong><i>The Locked Tomb</i></strong> series by Tamsyn Muir, 
+                                the last of which is a story about space necromancers.
                             </p>
-                            <p class="read-more"><a href="#">Read More</a></p>                            
                         </div>
                         <div class="hobbies-sample-panel">
                             <img class="hobbies-panel-img" src="images/watch-movie.png" alt="Movies and TV Shows">
                             <h2>Movies & TV Shows</h2>
                             <p>
-                                I like watching movies and TV shows.
-                                Right now, I'm watching the TV show The White Lotus.
+                                Aside from the fantasy genre, I enjoy movies and TV series that make me reflect on life and the human condition. 
+                                I particularly like <strong><i>Interstellar</i></strong> and <strong><i>Inception</i></strong> by Christopher Nolan. 
+                                As for TV series, I recently binge-watched <strong><i>One Day</i></strong> on Netflix, and I'm eagerly awaiting new episodes of <strong><i>The White Lotus</i></strong>.
                             </p>
-                            <p class="read-more"><a href="#">Read More</a></p>                            
                         </div>
                     </div>
                     <div class="hobbies-piping"></div>                    
                 </div>
             </section>
-        </article>  
-            
 
+<!-- FUN FACT SECTION -->
+            <section id="fun" class="fun">
+                <div class="fun-group">
+                    <div id="fun-contents" class="fun-contents" style="display: none">
+                        <h1>Fun Facts</h1>
+                        <div class="fun-image-group">
+                            <img class="photo" src="images/the-pope.png" alt="The Pope"/>
+                            <ul>
+                                <li>                                    
+                                    I often get mistaken for a girl because of my name,
+                                    but I was actually named after the pope.
+                                </li>
+                                <li>
+                                    I slightly prefer cats over dogs, but I like them both.
+                                </li>
+                                <li>
+                                    When I was in  fifth grade elementary, I started a class 'welga' (strike) due to an exam grading mistake.
+                                    The teacher was furious to say the least.
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <button onclick="fun_content_show()">Fun Facts</button>
+                </div>
+                <div class="hobbies-piping"></div>
+            </section>
+        </article>  
+
+<!-- CONTACT INFO SECTION -->
         <footer id="contact">
             <div class="footer-container">
                 <h1>Contact Me</h1>
